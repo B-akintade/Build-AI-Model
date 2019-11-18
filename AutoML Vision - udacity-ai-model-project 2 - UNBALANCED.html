@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!-- saved from url=(0152)https://cloud.google.com/automl/ui/vision/datasets/evaluate?dataset=ICN6266300138916883984&model=ICN8119360777988700299&project=udacity-ai-model-project -->
+<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>AutoML Vision - udacity-ai-model-project</title>
+
+    <link rel="shortcut icon" type="image/png" href="https://ssl.gstatic.com/pantheon/images/favicon/default.png">
+
+        <script async="" src="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/analytics.js.download"></script><script src="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/dialog-polyfill.js.download"></script>
+    <link rel="stylesheet" href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/dialog-polyfill.css">
+
+        <script src="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/mdl_all_js_compiled.js.download"></script>
+    <link type="text/css" rel="stylesheet" href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/mdl_styles.css">
+    <link rel="stylesheet" href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/icon">
+
+        <link rel="stylesheet" href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/getmdl_select_style.css">
+
+        <link href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/css" rel="stylesheet">
+        <link href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/css(1)" rel="stylesheet">
+
+        <link type="text/css" rel="stylesheet" href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/amlcss.css">
+
+        <link rel="stylesheet" href="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/googlecode.css">
+
+        <script src="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/bundle.js.download"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async="" src="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/js"></script>
+      <script>
+       window.shell_dataLayer = window.dataLayer || [];
+       function gtag(){shell_dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-99383445-7');
+
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-99383445-7', 'auto');
+              ga('set', 'title', 'AutoML Vision');
+              ga('set', 'dimension1', 'vision');
+              ga('send', 'pageview', '/vision/datasets/evaluate');
+             </script>
+         
+  </head>
+  <body onload="automl.initializeApp(&#39;vision&#39;);  automl.vision.initEvaluatePage(
+    &#39;/automl/ui/vision/datasets/evaluate_annotation?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project&#39;,
+    {},
+    {
+  &quot;hasEvaluation&quot;: true, 
+  &quot;name&quot;: &quot;AutoMLDataset_2_v20190922144428&quot;, 
+  &quot;staticMetrics&quot;: {
+    &quot;recallAt1&quot;: 0.9512195, 
+    &quot;recall&quot;: 0.9512195, 
+    &quot;confidenceThreshold&quot;: 0.5, 
+    &quot;precisionAt1&quot;: 0.9512195, 
+    &quot;precision&quot;: 0.9512195
+  }, 
+  &quot;createDate&quot;: {
+    &quot;text&quot;: &quot;Sep 22, 2019&quot;, 
+    &quot;timestampMillis&quot;: &quot;1569164229465&quot;, 
+    &quot;format&quot;: &quot;date&quot;
+  }, 
+  &quot;auPrc&quot;: 0.9888224, 
+  &quot;confusionMatrix&quot;: {
+    &quot;annotationSpecs&quot;: [
+      {
+        &quot;displayName&quot;: &quot;pneumonia _ 300&quot;, 
+        &quot;id&quot;: &quot;1681625907962588715&quot;
+      }, 
+      {
+        &quot;displayName&quot;: &quot;normal _ 100&quot;, 
+        &quot;id&quot;: &quot;8231251265543586317&quot;
+      }
+    ], 
+    &quot;rows&quot;: [
+      {
+        &quot;columns&quot;: [
+          32, 
+          2
+        ]
+      }, 
+      {
+        &quot;columns&quot;: [
+          0, 
+          7
+        ]
+      }
+    ]
+  }, 
+  &quot;createTime&quot;: {
+    &quot;text&quot;: &quot;02:57 PM UTC&quot;, 
+    &quot;timestampMillis&quot;: &quot;1569164229465&quot;, 
+    &quot;format&quot;: &quot;time&quot;
+  }, 
+  &quot;testExamplesCount&quot;: 41, 
+  &quot;validationExamplesCount&quot;: 42, 
+  &quot;annotationsCount&quot;: 2, 
+  &quot;modelType&quot;: &quot;cloud&quot;, 
+  &quot;trainExamplesCount&quot;: 317, 
+  &quot;isResumable&quot;: true, 
+  &quot;trainCost&quot;: 1, 
+  &quot;id&quot;: &quot;ICN8119360777988700299&quot;, 
+  &quot;confidenceMetrics&quot;: {
+    &quot;metrics&quot;: [
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 1.0, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.5
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 1.0, 
+        &quot;confidenceThreshold&quot;: 0.05, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.8541667
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 1.0, 
+        &quot;confidenceThreshold&quot;: 0.1, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.8723404
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9756098, 
+        &quot;confidenceThreshold&quot;: 0.15, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.8695652
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.2, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.8666667
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.25, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.9069768
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.3, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.9069768
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.35, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.9069768
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.4, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.9285714
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.45, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.9512195
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.5, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.9512195
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9512195, 
+        &quot;recall&quot;: 0.9512195, 
+        &quot;confidenceThreshold&quot;: 0.55, 
+        &quot;precisionAt1&quot;: 0.9512195, 
+        &quot;precision&quot;: 0.9512195
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.9268293, 
+        &quot;recall&quot;: 0.9268293, 
+        &quot;confidenceThreshold&quot;: 0.6, 
+        &quot;precisionAt1&quot;: 0.95, 
+        &quot;precision&quot;: 0.95
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.902439, 
+        &quot;recall&quot;: 0.902439, 
+        &quot;confidenceThreshold&quot;: 0.65, 
+        &quot;precisionAt1&quot;: 0.948718, 
+        &quot;precision&quot;: 0.948718
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.902439, 
+        &quot;recall&quot;: 0.902439, 
+        &quot;confidenceThreshold&quot;: 0.7, 
+        &quot;precisionAt1&quot;: 0.948718, 
+        &quot;precision&quot;: 0.948718
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.902439, 
+        &quot;recall&quot;: 0.902439, 
+        &quot;confidenceThreshold&quot;: 0.75, 
+        &quot;precisionAt1&quot;: 0.948718, 
+        &quot;precision&quot;: 0.948718
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.8536586, 
+        &quot;recall&quot;: 0.8536586, 
+        &quot;confidenceThreshold&quot;: 0.8, 
+        &quot;precisionAt1&quot;: 0.9459459, 
+        &quot;precision&quot;: 0.9459459
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.8536586, 
+        &quot;recall&quot;: 0.8536586, 
+        &quot;confidenceThreshold&quot;: 0.85, 
+        &quot;precisionAt1&quot;: 0.9722222, 
+        &quot;precision&quot;: 0.9722222
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.8536586, 
+        &quot;recall&quot;: 0.8536586, 
+        &quot;confidenceThreshold&quot;: 0.9, 
+        &quot;precisionAt1&quot;: 1.0, 
+        &quot;precision&quot;: 1.0
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.8292683, 
+        &quot;recall&quot;: 0.8292683, 
+        &quot;confidenceThreshold&quot;: 0.95, 
+        &quot;precisionAt1&quot;: 1.0, 
+        &quot;precision&quot;: 1.0
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.8292683, 
+        &quot;recall&quot;: 0.8292683, 
+        &quot;confidenceThreshold&quot;: 0.96, 
+        &quot;precisionAt1&quot;: 1.0, 
+        &quot;precision&quot;: 1.0
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.8292683, 
+        &quot;recall&quot;: 0.8292683, 
+        &quot;confidenceThreshold&quot;: 0.97, 
+        &quot;precisionAt1&quot;: 1.0, 
+        &quot;precision&quot;: 1.0
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.8048781, 
+        &quot;recall&quot;: 0.8048781, 
+        &quot;confidenceThreshold&quot;: 0.98, 
+        &quot;precisionAt1&quot;: 1.0, 
+        &quot;precision&quot;: 1.0
+      }, 
+      {
+        &quot;recallAt1&quot;: 0.6585366, 
+        &quot;recall&quot;: 0.6585366, 
+        &quot;confidenceThreshold&quot;: 0.99, 
+        &quot;precisionAt1&quot;: 1.0, 
+        &quot;precision&quot;: 1.0
+      }, 
+      {
+        &quot;confidenceThreshold&quot;: 1.0, 
+        &quot;precisionAt1&quot;: 1.0, 
+        &quot;precision&quot;: 1.0
+      }
+    ]
+  }
+},
+    &#39;ya29.ImCMB_ag8utaV0Sx_oSoxB17ieBHFWvtTIT1bPT6zwo-W0NClujaJA1-8Vvxu8gCdDjgoweKBHv1mhLxfMRazaFRVtkBUyvjBkbx1regWCmO3Wc-2SFE7WH0pWedYEn60zs&#39;)
+" class="automl">
+  
+    <div class="mdl-layout__container"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header is-upgraded" data-upgraded=",MaterialLayout">
+      <header class="mdl-layout__header automl-header is-casting-shadow">
+        <div class="mdl-layout-icon">
+          <img class="automl-logo" src="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/logo-vision.png" alt="">
+        </div>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">AutoML Vision</span>
+                      <span class="automl-beta-badge">Beta</span>
+                        <div class="automl-actionbar">
+            <h1>AutoMLDataset_2</h1>          <div id="automl-actionbar-add-images" class="automl-actionbar-menu-button automl-actionbar-add-images">
+                                  <button class="automl-button mdl-button mdl-js-button automl-menu-button has-dropdown-button mdl-button--primary" type="button" id="automl-actionbar-add-images-button" data-upgraded=",MaterialButton">
+              <i class="material-icons">add_box</i>
+             Add images     </button>
+  
+          <div class="automl-menu-item" data-css-name="automl-upload-local-files" data-label="Upload from your computer">
+      </div>
+          <div class="automl-menu-item" data-css-name="automl-import-from-gcs" data-label="Select CSV file on Cloud Storage">
+      </div>
+      </div>
+                                  <button class="automl-button mdl-button mdl-js-button automl-actionbar-manage-labels mdl-button--primary" data-upgraded=",MaterialButton">
+              <i class="material-icons">bar_chart</i>
+             Label stats     </button>
+  
+  <span id="automl-manage-labels-url" data-url="/automl/ui/vision/datasets/label_stats?dataset=ICN6266300138916883984&amp;project=udacity-ai-model-project"></span>
+  <div class="automl-side-panel hidden" id="automl-manage-labels" style="width:720px;">
+    <iframe class="automl-side-panel-iframe" src="./AutoML Vision - udacity-ai-model-project 2 - UNBALANCED_files/saved_resource.html"></iframe>
+    <div class="automl-side-panel-spinner">
+      <div class="mdl-spinner mdl-js-spinner is-active is-upgraded" data-upgraded=",MaterialSpinner"><div class="mdl-spinner__layer mdl-spinner__layer-1"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-2"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-3"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-4"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div></div>
+    </div>
+  </div>
+  <div class="automl-side-panel-overlay hidden" id="automl-manage-labels_overlay">
+  </div>
+                                  <button class="automl-button mdl-button mdl-js-button automl-actionbar-export-button mdl-button--primary" data-upgraded=",MaterialButton">
+              <i class="material-icons">border_all</i>
+             Export data     </button>
+  
+      </div>
+    <div class="automl-vision-actionbar-local-file-uploader" data-create-file-upload-url="/automl/ui/batch_create_upload_uri" data-gcs-bucket-name="udacity-ai-model-project-vcm">
+    <input type="file" class="automl-file-input" accept=".jpg,.jpeg,.png,.webp,.gif,.bmp,.tiff,.tif,.ico,.zip" style="display:none" multiple="">
+    <form class="automl-dataset-file-uploader-form" action="https://cloud.google.com/automl/ui/vision/datasets/import_from_gcs?dataset=ICN6266300138916883984&amp;project=udacity-ai-model-project" method="post">
+      <input type="hidden" name="xsrf_token" value="jZoMO99E6CI12rdfwZrJN1rINNOQDqWMyBewYhBtL_o6MTU2OTE4ODg0NDcwOTIyMA" class="automl-xsrf-token-input">
+      <input type="hidden" name="gcs_paths" class="automl-gcs-paths-input">
+    </form>
+  </div>
+
+    <dialog id="automl_actionbar_gcs_dialog" class="mdl-dialog">
+    <form id="automl_actionbar_gcs_form" action="https://cloud.google.com/automl/ui/vision/datasets/import_from_gcs?dataset=ICN6266300138916883984&amp;project=udacity-ai-model-project" method="POST">
+      <input type="hidden" name="xsrf_token" value="jZoMO99E6CI12rdfwZrJN1rINNOQDqWMyBewYhBtL_o6MTU2OTE4ODg0NDcwOTIyMA">
+      <h4 class="mdl-dialog__title">Import an image list</h4>
+      <div class="mdl-dialog__content">
+        This file should contain a list of paths (gs://) to your images. This file can include labels
+        for each image.
+        <div>
+          <div class="mdl-textfield mdl-js-textfield automl-gcs-input-wrapper is-dirty is-upgraded" data-input-pattern="^gs://udacity-ai-model-project-vcm/[A-Za-z0-9 .,_~/:=-]+[.](csv)$" data-upgraded=",MaterialTextfield">
+    <input class="mdl-textfield__input automl-gcs-input" type="text" id="gcs-path" name="gcs_paths" value="gs://udacity-ai-model-project-vcm/" pattern="^gs://udacity-ai-model-project-vcm/[A-Za-z0-9 .,_~/:=-]+[.](csv)$">
+        <span class="mdl-textfield__error">
+      Must be valid GCS path starting with gs://udacity-ai-model-project-vcm/ and ending with .csv
+    </span>
+  </div>
+        </div>
+      </div>
+      <div class="mdl-dialog__actions">
+                                <button class="automl-button mdl-button mdl-js-button  mdl-button--primary" type="button" id="automl_actionbar_add_gcs" data-upgraded=",MaterialButton">
+             Import     </button>
+  
+                                <button class="automl-button mdl-button mdl-js-button  mdl-button--primary" type="button" id="automl_actionbar_close_gcs" data-upgraded=",MaterialButton">
+             Cancel     </button>
+  
+      </div>
+    </form>
+  </dialog>
+
+      
+  <dialog class="automl-dialog mdl-dialog automl-export-to-gcs-dialog" id="automl-export-dialog">
+    <h4 class="mdl-dialog__title">Export data</h4>
+    <div class="mdl-dialog__content">    <div class="automl-export-summary">
+      Your dataset will be exported as a list of items in CSV format. Each item contains a
+      Cloud Storage path, any label(s) assigned to that item, and a flag that indicates whether that
+      item is in the training, validation, or test set. <br><br>
+      You will be emailed once exporting has completed.
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label automl-gcs-input-wrapper is-dirty is-upgraded" data-input-pattern="^gs://udacity-ai-model-project-vcm/[A-Za-z0-9 .,_~/:=-]+/$" data-upgraded=",MaterialTextfield">
+    <input class="mdl-textfield__input automl-gcs-input" type="text" id="export-gcs-path" name="gcs_path" value="gs://udacity-ai-model-project-vcm/ICN6266300138916883984/export/201909221447/" pattern="^gs://udacity-ai-model-project-vcm/[A-Za-z0-9 .,_~/:=-]+/$">
+          <label class="mdl-textfield__label" for="export-gcs-path">Destination folder on Cloud Storage</label>
+        <span class="mdl-textfield__error">
+      Must be valid GCS directory path starting with gs://udacity-ai-model-project-vcm/ and ending with "/"
+    </span>
+  </div>
+  </div>
+    <div class="mdl-dialog__actions">
+              <button type="button" class="mdl-button automl-submit-export">
+          Export
+        </button>
+              <button type="button" class="mdl-button automl-close-export-dialog">
+          Cancel
+        </button>
+          </div>
+  </dialog>
+
+
+
+  <form action="https://cloud.google.com/automl/ui/vision/datasets/export_to_gcs?dataset=ICN6266300138916883984&amp;project=udacity-ai-model-project" method="POST" class="automl-export-to-gcs-form">
+    <input type="hidden" name="xsrf_token" value="jZoMO99E6CI12rdfwZrJN1rINNOQDqWMyBewYhBtL_o6MTU2OTE4ODg0NDcwOTIyMA">
+    <input type="hidden" name="gcs_path" value="" class="automl-export-path">
+  </form>
+
+
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+              
+    <button id="project-name" class="mdl-button mdl-js-button clickable automl-project-name" data-upgraded=",MaterialButton">
+      udacity-ai-model-project <i class="material-icons">arrow_drop_down</i>
+    </button>
+    <div class="mdl-menu__container is-upgraded"><div class="mdl-menu__outline mdl-menu--bottom-right"></div><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="project-name" data-upgraded=",MaterialMenu">
+                                  <li class="mdl-menu__item " disabled="" tabindex="-1">
+          plus2joy@gmail.com
+        </li>
+      
+          
+
+                          <a href="https://cloud.google.com/automl/ui/vision/project/select" class="automl-global-menu-item">
+                  <li class="mdl-menu__item " tabindex="-1">
+          Switch GCP project
+        </li>
+      
+        </a>
+          
+
+                                  <a href="https://cloud.google.com/vision/automl/docs" class="automl-global-menu-item" target="_blank">
+                  <li class="mdl-menu__item " tabindex="-1">
+          Documentation
+        </li>
+      
+        </a>
+          
+      
+                                  <a href="https://cloud.google.com/vision/automl/docs/beginners-guide" class="automl-global-menu-item" target="_blank">
+                  <li class="mdl-menu__item " tabindex="-1">
+          Beginner's Guide
+        </li>
+      
+        </a>
+          
+      
+                                  <a href="https://cloud.google.com/inclusive-ml" class="automl-global-menu-item" target="_blank">
+                  <li class="mdl-menu__item " tabindex="-1">
+          Inclusive ML Guide
+        </li>
+      
+        </a>
+          
+      
+                          <a href="https://console.cloud.google.com/home/dashboard?project=udacity-ai-model-project" class="automl-global-menu-item" target="_blank">
+                  <li class="mdl-menu__item " tabindex="-1">
+          Go to Cloud Console
+        </li>
+      
+        </a>
+          
+                          <a href="https://cloud.google.com/automl/ui/vision/datasets/evaluate?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project#" class="automl-global-menu-item">
+                  <li class="mdl-menu__item automl-feedback-item" tabindex="-1">
+          Feedback
+        </li>
+      
+        </a>
+          
+                          <a href="https://cloud.google.com/automl/ui/signout" class="automl-global-menu-item">
+                  <li class="mdl-menu__item " tabindex="-1">
+          Sign out
+        </li>
+      
+        </a>
+          
+    </ul></div>
+  
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+                  <nav class="automl-side-nav">
+            <div class="automl-side-nav-inner">
+                            
+                              <a class="automl-side-nav-item" href="https://cloud.google.com/automl/ui/vision/datasets/list?project=udacity-ai-model-project">
+                  <i class="material-icons">list</i>
+                  <span class="automl-side-nav-item-text">Datasets</span>
+                </a>
+              
+                              <a class="automl-side-nav-item" href="https://cloud.google.com/automl/ui/vision/models/list?project=udacity-ai-model-project">
+                  <i class="material-icons">lightbulb_outline</i>
+                  <span class="automl-side-nav-item-text">Models</span>
+                </a>
+              
+                          </div>
+          </nav>
+        
+        <div class="automl-page-content">
+          
+<div class="automl-vision-evaluate-page">
+  <div class="mdl-tabs automl-tab-bar is-upgraded">
+    <div class="mdl-tabs__tab-bar">
+                        <a href="https://cloud.google.com/automl/ui/vision/datasets/details?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project" class="mdl-tabs__tab ">Images</a>
+                                <a href="https://cloud.google.com/automl/ui/vision/datasets/train?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project" class="mdl-tabs__tab ">Train</a>
+                                <span href="" class="mdl-tabs__tab is-active ">Evaluate</span>
+                                <a href="https://cloud.google.com/automl/ui/vision/datasets/predict?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project" class="mdl-tabs__tab ">Predict</a>
+                  </div>
+      </div>
+
+
+  
+    <div class="automl-evaluate-model-panel">
+    <div class="automl-input-title">Model</div>
+                
+      <div class="mdl-textfield mdl-js-textfield getmdl-select automl-model-select is-upgraded is-dirty" data-upgraded=",MaterialTextfield">
+    <input class="mdl-textfield__input" value="" id="automl-model-select-input" readonly="">
+    <input class="dropdown-select-selected-value" value="ICN8119360777988700299" type="hidden" name="">
+    <label class="mdl-textfield__label" for="automl-model-select-input"></label>
+    <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+    <div class="mdl-menu__container is-upgraded"><div class="mdl-menu__outline mdl-menu--bottom-left"></div><ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu is-animating" for="automl-model-select-input" data-upgraded=",MaterialMenu">
+                                                      <li class="mdl-menu__item selected" data-val="ICN8119360777988700299" data-selected="True" tabindex="-1">
+          AutoMLDataset_2_v20190922144428
+        </li>
+          </ul></div>
+ </div>
+
+
+                
+        
+  
+    
+  
+            
+    <div class="automl-scorecard automl-model-scorecard " data-model-type="cloud">
+    <div class="automl-scorecard-sections">
+                <div class="automl-scorecard-section  ">
+    <div class="automl-scorecard-headline">
+      <span class="automl-scorecard-headline-content">Created</span>
+      
+    </div>
+    <div class="automl-scorecard-data ">  <span class="automl-datetime local" data-format="date" data-timestamp="1569164229465">Sep 22, 2019</span>
+</div>
+    <div class="automl-scorecard-subdata">1 compute hour</div>
+      </div>
+
+                <div class="automl-scorecard-section  ">
+    <div class="automl-scorecard-headline">
+      <span class="automl-scorecard-headline-content">Analyzed</span>
+      
+    </div>
+    <div class="automl-scorecard-data ">400 images</div>
+    <div class="automl-scorecard-subdata">2 labels, 41 test images</div>
+      </div>
+
+                  <div class="automl-scorecard-section automl-scorecard-chart-section ">
+    <div class="automl-scorecard-headline">
+      <span class="automl-scorecard-headline-content">Avg precision</span>
+        <i class="material-icons automl-inline-tooltip " id="ICN8119360777988700299-prc-tooltip" tabindex="0">help_outline</i>
+    <div class="mdl-tooltip " data-mdl-for="ICN8119360777988700299-prc-tooltip" data-upgraded=",MaterialTooltip">
+    "Average precision" measures how well your model performs across all score thresholds, by calculating the area under the precision-recall tradeoff curve shown here. 1.0 is the maximum score. 
+  </div>
+
+    </div>
+    <div class="automl-scorecard-data ">0.989</div>
+    <div class="automl-scorecard-subdata"></div>
+          <div class="automl-scorecard-chart">  <div class="automl-scorecard-prc-chart" data-value="{
+  &quot;metrics&quot;: [
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 1.0, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.5
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 1.0, 
+      &quot;confidenceThreshold&quot;: 0.05, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.8541667
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 1.0, 
+      &quot;confidenceThreshold&quot;: 0.1, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.8723404
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9756098, 
+      &quot;confidenceThreshold&quot;: 0.15, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.8695652
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.2, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.8666667
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.25, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.9069768
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.3, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.9069768
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.35, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.9069768
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.4, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.9285714
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.45, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.9512195
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.5, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.9512195
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9512195, 
+      &quot;recall&quot;: 0.9512195, 
+      &quot;confidenceThreshold&quot;: 0.55, 
+      &quot;precisionAt1&quot;: 0.9512195, 
+      &quot;precision&quot;: 0.9512195
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.9268293, 
+      &quot;recall&quot;: 0.9268293, 
+      &quot;confidenceThreshold&quot;: 0.6, 
+      &quot;precisionAt1&quot;: 0.95, 
+      &quot;precision&quot;: 0.95
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.902439, 
+      &quot;recall&quot;: 0.902439, 
+      &quot;confidenceThreshold&quot;: 0.65, 
+      &quot;precisionAt1&quot;: 0.948718, 
+      &quot;precision&quot;: 0.948718
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.902439, 
+      &quot;recall&quot;: 0.902439, 
+      &quot;confidenceThreshold&quot;: 0.7, 
+      &quot;precisionAt1&quot;: 0.948718, 
+      &quot;precision&quot;: 0.948718
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.902439, 
+      &quot;recall&quot;: 0.902439, 
+      &quot;confidenceThreshold&quot;: 0.75, 
+      &quot;precisionAt1&quot;: 0.948718, 
+      &quot;precision&quot;: 0.948718
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.8536586, 
+      &quot;recall&quot;: 0.8536586, 
+      &quot;confidenceThreshold&quot;: 0.8, 
+      &quot;precisionAt1&quot;: 0.9459459, 
+      &quot;precision&quot;: 0.9459459
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.8536586, 
+      &quot;recall&quot;: 0.8536586, 
+      &quot;confidenceThreshold&quot;: 0.85, 
+      &quot;precisionAt1&quot;: 0.9722222, 
+      &quot;precision&quot;: 0.9722222
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.8536586, 
+      &quot;recall&quot;: 0.8536586, 
+      &quot;confidenceThreshold&quot;: 0.9, 
+      &quot;precisionAt1&quot;: 1.0, 
+      &quot;precision&quot;: 1.0
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.8292683, 
+      &quot;recall&quot;: 0.8292683, 
+      &quot;confidenceThreshold&quot;: 0.95, 
+      &quot;precisionAt1&quot;: 1.0, 
+      &quot;precision&quot;: 1.0
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.8292683, 
+      &quot;recall&quot;: 0.8292683, 
+      &quot;confidenceThreshold&quot;: 0.96, 
+      &quot;precisionAt1&quot;: 1.0, 
+      &quot;precision&quot;: 1.0
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.8292683, 
+      &quot;recall&quot;: 0.8292683, 
+      &quot;confidenceThreshold&quot;: 0.97, 
+      &quot;precisionAt1&quot;: 1.0, 
+      &quot;precision&quot;: 1.0
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.8048781, 
+      &quot;recall&quot;: 0.8048781, 
+      &quot;confidenceThreshold&quot;: 0.98, 
+      &quot;precisionAt1&quot;: 1.0, 
+      &quot;precision&quot;: 1.0
+    }, 
+    {
+      &quot;recallAt1&quot;: 0.6585366, 
+      &quot;recall&quot;: 0.6585366, 
+      &quot;confidenceThreshold&quot;: 0.99, 
+      &quot;precisionAt1&quot;: 1.0, 
+      &quot;precision&quot;: 1.0
+    }, 
+    {
+      &quot;confidenceThreshold&quot;: 1.0, 
+      &quot;precisionAt1&quot;: 1.0, 
+      &quot;precision&quot;: 1.0
+    }
+  ]
+}"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 56px; height: 56px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="56" height="56" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_2"><clippath id="_ABSTRACT_RENDERER_ID_3"><rect x="0" y="0" width="56" height="56"></rect></clippath></defs><rect x="0" y="0" width="56" height="56" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="56" height="56" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://cloud.google.com/automl/ui/vision/datasets/evaluate?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project#_ABSTRACT_RENDERER_ID_3)"><g><path d="M55.5,28L55.5,8.5208315L55.5,7.521278000000002L54.158539,7.673913999999996L52.8170725,7.8333315L52.8170725,5.616275999999999L52.8170725,5.616275999999999L52.8170725,5.616275999999999L52.8170725,4.428573L52.8170725,3.182927499999998L52.8170725,3.182927499999998L52.8170725,3.182927499999998L51.4756115,3.25L50.134145,3.320510000000006L50.134145,3.320510000000006L50.134145,3.320510000000006L47.451223000000006,3.472975499999997L47.451223000000006,2.0277789999999953L47.451223000000006,0.5L46.109756499999996,0.5L46.109756499999996,0.5L46.109756499999996,0.5L44.7682955,0.5L36.719513,0.5L0.5,0.5" stroke="#3366cc" stroke-width="1" fill-opacity="1" fill="none"></path></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>0.5</td></tr><tr><td>1</td><td>0.854</td></tr><tr><td>1</td><td>0.872</td></tr><tr><td>0.976</td><td>0.87</td></tr><tr><td>0.951</td><td>0.867</td></tr><tr><td>0.951</td><td>0.907</td></tr><tr><td>0.951</td><td>0.907</td></tr><tr><td>0.951</td><td>0.907</td></tr><tr><td>0.951</td><td>0.929</td></tr><tr><td>0.951</td><td>0.951</td></tr><tr><td>0.951</td><td>0.951</td></tr><tr><td>0.951</td><td>0.951</td></tr><tr><td>0.927</td><td>0.95</td></tr><tr><td>0.902</td><td>0.949</td></tr><tr><td>0.902</td><td>0.949</td></tr><tr><td>0.902</td><td>0.949</td></tr><tr><td>0.854</td><td>0.946</td></tr><tr><td>0.854</td><td>0.972</td></tr><tr><td>0.854</td><td>1</td></tr><tr><td>0.829</td><td>1</td></tr><tr><td>0.829</td><td>1</td></tr><tr><td>0.829</td><td>1</td></tr><tr><td>0.805</td><td>1</td></tr><tr><td>0.659</td><td>1</td></tr><tr><td>0</td><td>1</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 66px; left: 66px; white-space: nowrap; font-family: Arial; font-size: 6px;">...</div><div></div></div></div>
+</div>
+      </div>
+
+
+                  <div class="automl-scorecard-section automl-scorecard-chart-section ">
+    <div class="automl-scorecard-headline">
+      <span class="automl-scorecard-headline-content">Precision</span>
+        <i class="material-icons automl-inline-tooltip " id="ICN8119360777988700299precision-tooltip" tabindex="0">help_outline</i>
+    <div class="mdl-tooltip " data-mdl-for="ICN8119360777988700299precision-tooltip" data-upgraded=",MaterialTooltip">
+    A high precision model produces fewer false positives
+  </div>
+
+    </div>
+    <div class="automl-scorecard-data ">95.122%</div>
+    <div class="automl-scorecard-subdata"></div>
+          <div class="automl-scorecard-chart">  <div class="automl-chart automl-simple-donut-chart " data-value="0.9512195"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 56px; height: 56px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="56" height="56" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_0"></defs><rect x="0" y="0" width="56" height="56" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><path d="M21.362145223734352,7.025279883411855L19.551821193843722,1.3049016697969087A28,28,0,0,1,28,0L27.999999999999996,6A22,22,0,0,0,21.362145223734352,7.025279883411855" stroke="none" stroke-width="0" fill="#eeeeee"></path></g><g><path d="M28,6L28,0A28,28,0,1,1,19.551821193843722,1.3049016697969087L21.362145223734352,7.025279883411855A22,22,0,1,0,28,6" stroke="none" stroke-width="0" fill="#3b78e7"></path></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td>0.951</td></tr><tr><td></td><td>0.049</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 66px; left: 66px; white-space: nowrap; font-family: Arial; font-size: 6px;"></div><div></div></div></div>
+</div>
+      </div>
+
+
+                  <div class="automl-scorecard-section automl-scorecard-chart-section ">
+    <div class="automl-scorecard-headline">
+      <span class="automl-scorecard-headline-content">Recall</span>
+        <i class="material-icons automl-inline-tooltip " id="ICN8119360777988700299recall-tooltip" tabindex="0">help_outline</i>
+    <div class="mdl-tooltip " data-mdl-for="ICN8119360777988700299recall-tooltip" data-upgraded=",MaterialTooltip">
+    A high recall model produces fewer false negatives
+  </div>
+
+    </div>
+    <div class="automl-scorecard-data ">95.122%</div>
+    <div class="automl-scorecard-subdata"></div>
+          <div class="automl-scorecard-chart">  <div class="automl-chart automl-simple-donut-chart " data-value="0.9512195"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 56px; height: 56px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="56" height="56" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_1"></defs><rect x="0" y="0" width="56" height="56" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><path d="M21.362145223734352,7.025279883411855L19.551821193843722,1.3049016697969087A28,28,0,0,1,28,0L27.999999999999996,6A22,22,0,0,0,21.362145223734352,7.025279883411855" stroke="none" stroke-width="0" fill="#eeeeee"></path></g><g><path d="M28,6L28,0A28,28,0,1,1,19.551821193843722,1.3049016697969087L21.362145223734352,7.025279883411855A22,22,0,1,0,28,6" stroke="none" stroke-width="0" fill="#3b78e7"></path></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td>0.951</td></tr><tr><td></td><td>0.049</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 66px; left: 66px; white-space: nowrap; font-family: Arial; font-size: 6px;"></div><div></div></div></div>
+</div>
+      </div>
+
+
+          </div>
+          <div class="automl-scorecard-caption">Precision and recall are based on a score threshold of 0.5</div>
+      </div>
+
+
+  </div>
+
+  <div class="automl-evaluate-container">
+    <div class="automl-evaluate-label-selector">
+      <div class="automl-label-selector " id="automl-evaluate-label-selector" data-multiselect="no" data-has-search-bar="yes">
+    <div class="automl-label-filter-bar-header">
+      <div class="automl-filter-bar automl-label-filter-bar" id="" data-has-suggestion="">
+
+    <i class="material-icons automl-search-icon">filter_list</i>
+
+    
+    <div class="automl-search-input-wrapper">
+            <input type="text" placeholder="Type to filter labels..." name="search-input" class="automl-search-input automl-menu-activator" id="automl-content-filter">
+
+            
+      <div class="automl-menu " id="" tabindex="0">
+            <ul class="automl-selection-menu" data-max-items="8">
+      <li class="menu-item-disabled" disabled="">Nothing found</li>
+          </ul>
+  
+      </div>
+    </div>
+</div>
+
+    </div>
+
+          <a class="automl-label-selector-row selected" data-name="All labels" data-label-key="">
+        <span class="cell automl-label-selector-name">All labels</span>
+        <progress class="cell" value="0.9888224" max="1"></progress>
+      </a>
+          <a class="automl-label-selector-row" data-name="normal _ 100" data-label-key="8231251265543586317">
+        <span class="cell automl-label-selector-name">normal _ 100</span>
+        <progress class="cell" value="0.0" max="1"></progress>
+      </a>
+          <a class="automl-label-selector-row" data-name="pneumonia _ 300" data-label-key="1681625907962588715">
+        <span class="cell automl-label-selector-name">pneumonia _ 300</span>
+        <progress class="cell" value="0.0" max="1"></progress>
+      </a>
+      </div>
+    </div>
+
+    <div class="automl-evaluate-content automl-all-labels">
+      <h2 class="automl-selected-label-title">All labels</h2>
+
+        <div class="automl-metrics-table">
+    <table>
+      <tbody><tr>
+        <td>Score threshold
+            <i class="material-icons automl-inline-tooltip " id="automl_vision_evaluate_all_labels_metrics_tooltip_confidence_threshold" tabindex="0">help_outline</i>
+    <div class="mdl-tooltip " data-mdl-for="automl_vision_evaluate_all_labels_metrics_tooltip_confidence_threshold" data-upgraded=",MaterialTooltip">
+    Converting between the models output scores to a set of applicable labels requires a threshold. Lower thresholds typically increase recall but lower precision.
+  </div>
+
+        </td>
+        <td class="automl-evaluate-metrics-threshold">
+          <div class="automl-metrics-table-threshold-section">
+            <div class="mdl-slider__container"><input class="mdl-slider mdl-js-slider automl-evaluate-threshold-slider is-upgraded" type="range" min="0" max="1" step="0.05" value="0.5" data-upgraded=",MaterialSlider"><div class="mdl-slider__background-flex"><div class="mdl-slider__background-lower" style="flex: 0.5 1 0%;"></div><div class="mdl-slider__background-upper" style="flex: 0.5 1 0%;"></div></div></div>
+            <span class="automl-evaluate-threshold-display-value">0.50</span>
+          </div>
+        </td>
+      </tr>
+      <tr class="automl-evaluate-metrics-total-examples-row">
+        <td>Total images</td>
+        <td class="automl-evaluate-metrics-total-examples">400</td>
+      </tr>
+      <tr>
+        <td>Precision
+            <i class="material-icons automl-inline-tooltip " id="automl_vision_evaluate_all_labels_metrics_tooltip_precision" tabindex="0">help_outline</i>
+    <div class="mdl-tooltip " data-mdl-for="automl_vision_evaluate_all_labels_metrics_tooltip_precision" data-upgraded=",MaterialTooltip">
+    A high precision model produces fewer false positives
+  </div>
+
+        </td>
+        <td class="automl-evaluate-metrics-precision">95.1%</td>
+      </tr>
+      <tr>
+        <td>Recall
+            <i class="material-icons automl-inline-tooltip " id="automl_vision_evaluate_all_labels_metrics_tooltip_recall" tabindex="0">help_outline</i>
+    <div class="mdl-tooltip " data-mdl-for="automl_vision_evaluate_all_labels_metrics_tooltip_recall" data-upgraded=",MaterialTooltip">
+    A high recall model produces fewer false negatives
+  </div>
+
+        </td>
+        <td class="automl-evaluate-metrics-recall">95.1%</td>
+      </tr>
+    </tbody></table>
+    <div class="automl-evaluate-metrics-caption">
+      Use the slider to see which score threshold works best for your model on the
+      precision-recall tradeoff curve.
+                <a class="automl-external-link " href="https://cloud.google.com/vision/automl/docs/beginners-guide#evaluate" target="_blank">
+    Learn more about these metrics and graphs
+  </a>
+
+          </div>
+  </div>
+
+      <div class="automl-evaluate-single-label automl-single-label-chart-prc automl-metrics-chart"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 320px; height: 300px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="320" height="300" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_10"><clippath id="_ABSTRACT_RENDERER_ID_11"><rect x="61" y="10" width="198" height="185"></rect></clippath></defs><rect x="0" y="0" width="320" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="61" y="10" width="198" height="185" stroke="none" stroke-width="0" fill="#fafafa"></rect><g clip-path="url(https://cloud.google.com/automl/ui/vision/datasets/evaluate?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project#_ABSTRACT_RENDERER_ID_11)"></g><g></g><g><g><text text-anchor="middle" x="61.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="middle" x="160" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="middle" x="258.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="51.666666666666664" y="198.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.00</text></g><g><text text-anchor="end" x="51.666666666666664" y="152.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.25</text></g><g><text text-anchor="end" x="51.666666666666664" y="106.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.50</text></g><g><text text-anchor="end" x="51.666666666666664" y="60.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.75</text></g><g><text text-anchor="end" x="51.666666666666664" y="14.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.00</text></g></g></g><g><g><text text-anchor="middle" x="160" y="260.35" font-family="Arial" font-size="11" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Recall</text><rect x="61" y="251" width="198" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="18.683333333333334" y="102.5" font-family="Arial" font-size="11" font-style="italic" transform="rotate(-90 18.683333333333334 102.5)" stroke="none" stroke-width="0" fill="#222222">Precision</text><path d="M9.333333333333327,195L9.33333333333334,10L20.33333333333334,10.000000000000002L20.33333333333333,195Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th></th></tr></thead><tbody></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 330px; white-space: nowrap; font-family: Arial; font-size: 11px;">...</div><div></div></div></div>
+
+      <div class="automl-evaluate-single-label automl-evaluate-single-label-content">
+                  <div class="automl-message-bar automl-message-info automl-vision-evaluate-annotation-metrics-message">
+    <i class="material-icons">info</i>
+    <span class="automl-message-content">To improve your results: Add more images that are visually similar to your false negatives and false positives, ensure they are labeled correctly, and create a new model.</span>
+    <div class="automl-message-buttons">
+                
+  
+    </div>
+  </div>
+
+    <div class="automl-vision-evaluate-annotation-images-section automl-vision-evaluate-annotation-true-positives-section">
+      <h3>True positives</h3>
+      <p>The model predicted <span class="automl-selected-label-title">All labels</span> correctly on these test images (at time of training)</p>
+      <div class="automl-vision-evaluate-annotation-images-subsection automl-vision-evaluate-annotation-true-positives-subsection"> </div>
+    </div>
+
+    <div class="automl-vision-evaluate-annotation-images-section automl-vision-evaluate-annotation-false-negatives-section">
+      <h3>False negatives</h3>
+      <p>The model predicted <span class="automl-selected-label-title">All labels</span> correctly for these images, but scored less than <span class="automl-evaluate-threshold-display-value">0.50</span>.</p>
+      <div class="automl-vision-evaluate-annotation-images-subsection automl-vision-evaluate-annotation-false-negatives-subsection"> </div>
+    </div>
+
+    <div class="automl-vision-evaluate-annotation-images-section automl-vision-evaluate-annotation-false-positives-section">
+      <h3>False positives</h3>
+      <p>The model predicted <span class="automl-selected-label-title">All labels</span> for these images, when it should have predicted:</p>
+      <div class="automl-vision-evaluate-annotation-images-subsection automl-vision-evaluate-annotation-false-positives-subsection"> </div>
+    </div>
+  
+      </div>
+
+      <div class="automl-evaluate-all-labels">
+          <div class="automl-metrics-charts" id="automl_evaluate_all_labels_precision_and_recall">
+    <div class="automl-metrics-chart automl-metrics-chart-prc"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 320px; height: 300px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="320" height="300" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_4"><clippath id="_ABSTRACT_RENDERER_ID_5"><rect x="61" y="10" width="198" height="185"></rect></clippath></defs><rect x="0" y="0" width="320" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="61" y="10" width="198" height="185" stroke="none" stroke-width="0" fill="#fafafa"></rect><g clip-path="url(https://cloud.google.com/automl/ui/vision/datasets/evaluate?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project#_ABSTRACT_RENDERER_ID_5)"><g><path d="M258.5,102.5L258.5,37.333327200000014L258.5,33.989366399999994L253.6951306,34.50000319999998L248.8902415,35.0333272L248.8902415,27.6162688L248.8902415,27.6162688L248.8902415,27.6162688L248.8902415,23.642862399999984L248.8902415,19.475612000000012L248.8902415,19.475612000000012L248.8902415,19.475612000000012L244.0853721,19.700000000000017L239.280483,19.935888000000006L239.280483,19.935888000000006L239.280483,19.935888000000006L229.6707442,20.445954400000005L229.6707442,15.6111152L229.6707442,10.5L224.8658551,10.5L224.8658551,10.5L224.8658551,10.5L220.0609857,10.5L191.2317102,10.5L61.5,10.5" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g><g><circle cx="248.8902415" cy="19.475612000000012" r="6.5" stroke="#3366cc" stroke-width="1" fill="#fafafa"></circle><circle cx="248.8902415" cy="19.475612000000012" r="4" stroke="none" stroke-width="0" fill="#3366cc"></circle></g></g><g><g><text text-anchor="middle" x="61.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="middle" x="160" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="middle" x="258.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="51.666666666666664" y="198.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.00</text></g><g><text text-anchor="end" x="51.666666666666664" y="152.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.25</text></g><g><text text-anchor="end" x="51.666666666666664" y="106.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.50</text></g><g><text text-anchor="end" x="51.666666666666664" y="60.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.75</text></g><g><text text-anchor="end" x="51.666666666666664" y="14.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.00</text></g></g></g><g><g><text text-anchor="middle" x="160" y="260.35" font-family="Arial" font-size="11" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Recall</text><rect x="61" y="251" width="198" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="18.683333333333334" y="102.5" font-family="Arial" font-size="11" font-style="italic" transform="rotate(-90 18.683333333333334 102.5)" stroke="none" stroke-width="0" fill="#222222">Precision</text><path d="M9.333333333333327,195L9.33333333333334,10L20.33333333333334,10.000000000000002L20.33333333333333,195Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>1</td><td>0.5</td></tr><tr><td>1</td><td>0.854</td></tr><tr><td>1</td><td>0.872</td></tr><tr><td>0.976</td><td>0.87</td></tr><tr><td>0.951</td><td>0.867</td></tr><tr><td>0.951</td><td>0.907</td></tr><tr><td>0.951</td><td>0.907</td></tr><tr><td>0.951</td><td>0.907</td></tr><tr><td>0.951</td><td>0.929</td></tr><tr><td>0.951</td><td>0.951</td></tr><tr><td>0.951</td><td>0.951</td></tr><tr><td>0.951</td><td>0.951</td></tr><tr><td>0.927</td><td>0.95</td></tr><tr><td>0.902</td><td>0.949</td></tr><tr><td>0.902</td><td>0.949</td></tr><tr><td>0.902</td><td>0.949</td></tr><tr><td>0.854</td><td>0.946</td></tr><tr><td>0.854</td><td>0.972</td></tr><tr><td>0.854</td><td>1</td></tr><tr><td>0.829</td><td>1</td></tr><tr><td>0.829</td><td>1</td></tr><tr><td>0.829</td><td>1</td></tr><tr><td>0.805</td><td>1</td></tr><tr><td>0.659</td><td>1</td></tr><tr><td>0</td><td>1</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 330px; white-space: nowrap; font-family: Arial; font-size: 11px;">...</div><div></div></div></div>
+    <div class="automl-metrics-chart automl-metrics-chart-precision"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 320px; height: 300px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="320" height="300" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_6"><clippath id="_ABSTRACT_RENDERER_ID_7"><rect x="61" y="10" width="198" height="185"></rect></clippath></defs><rect x="0" y="0" width="320" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="61" y="10" width="198" height="185" stroke="none" stroke-width="0" fill="#fafafa"></rect><g clip-path="url(https://cloud.google.com/automl/ui/vision/datasets/evaluate?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project#_ABSTRACT_RENDERER_ID_7)"><g><path d="M61.5,19.475612000000012L71.35,19.475612000000012L81.2,19.475612000000012L91.05,19.475612000000012L100.9,19.475612000000012L110.75,19.475612000000012L120.6,19.475612000000012L130.45,19.475612000000012L140.3,19.475612000000012L150.15,19.475612000000012L160,19.475612000000012L169.85000000000002,19.475612000000012L179.7,19.700000000000017L189.55,19.935888000000006L199.39999999999998,19.935888000000006L209.25,19.935888000000006L219.10000000000002,20.445954400000005L228.95,15.6111152L238.8,10.5L248.64999999999998,10.5L250.62,10.5L252.59,10.5L254.56,10.5L256.53,10.5L258.5,10.5" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g><g><circle cx="160" cy="19.475612000000012" r="6.5" stroke="#3366cc" stroke-width="1" fill="#fafafa"></circle><circle cx="160" cy="19.475612000000012" r="4" stroke="none" stroke-width="0" fill="#3366cc"></circle></g></g><g><g><text text-anchor="middle" x="61.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="middle" x="160" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="middle" x="258.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="51.666666666666664" y="198.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.00</text></g><g><text text-anchor="end" x="51.666666666666664" y="152.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.25</text></g><g><text text-anchor="end" x="51.666666666666664" y="106.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.50</text></g><g><text text-anchor="end" x="51.666666666666664" y="60.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.75</text></g><g><text text-anchor="end" x="51.666666666666664" y="14.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.00</text></g></g></g><g><g><text text-anchor="middle" x="160" y="260.35" font-family="Arial" font-size="11" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Score threshold</text><rect x="61" y="251" width="198" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="18.683333333333334" y="102.5" font-family="Arial" font-size="11" font-style="italic" transform="rotate(-90 18.683333333333334 102.5)" stroke="none" stroke-width="0" fill="#222222">Precision@1</text><path d="M9.333333333333327,195L9.33333333333334,10L20.33333333333334,10.000000000000002L20.33333333333333,195Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>0</td><td>0.951</td></tr><tr><td>0.05</td><td>0.951</td></tr><tr><td>0.1</td><td>0.951</td></tr><tr><td>0.15</td><td>0.951</td></tr><tr><td>0.2</td><td>0.951</td></tr><tr><td>0.25</td><td>0.951</td></tr><tr><td>0.3</td><td>0.951</td></tr><tr><td>0.35</td><td>0.951</td></tr><tr><td>0.4</td><td>0.951</td></tr><tr><td>0.45</td><td>0.951</td></tr><tr><td>0.5</td><td>0.951</td></tr><tr><td>0.55</td><td>0.951</td></tr><tr><td>0.6</td><td>0.95</td></tr><tr><td>0.65</td><td>0.949</td></tr><tr><td>0.7</td><td>0.949</td></tr><tr><td>0.75</td><td>0.949</td></tr><tr><td>0.8</td><td>0.946</td></tr><tr><td>0.85</td><td>0.972</td></tr><tr><td>0.9</td><td>1</td></tr><tr><td>0.95</td><td>1</td></tr><tr><td>0.96</td><td>1</td></tr><tr><td>0.97</td><td>1</td></tr><tr><td>0.98</td><td>1</td></tr><tr><td>0.99</td><td>1</td></tr><tr><td>1</td><td>1</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 330px; white-space: nowrap; font-family: Arial; font-size: 11px;">...</div><div></div></div></div>
+      <i class="material-icons automl-inline-tooltip " id="precition_at_1_tooltip" tabindex="0">help_outline</i>
+    <div class="mdl-tooltip " data-mdl-for="precition_at_1_tooltip" data-upgraded=",MaterialTooltip">
+    The precision@1 curve shows how your model performs on the top-scored label. A higher score threshold produces fewer false positives, which increases precision.
+  </div>
+
+    <div class="automl-metrics-chart automl-metrics-chart-recall"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 320px; height: 300px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="320" height="300" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_8"><clippath id="_ABSTRACT_RENDERER_ID_9"><rect x="61" y="10" width="198" height="185"></rect></clippath></defs><rect x="0" y="0" width="320" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="61" y="10" width="198" height="185" stroke="none" stroke-width="0" fill="#fafafa"></rect><g clip-path="url(https://cloud.google.com/automl/ui/vision/datasets/evaluate?dataset=ICN6266300138916883984&amp;model=ICN8119360777988700299&amp;project=udacity-ai-model-project#_ABSTRACT_RENDERER_ID_9)"><g><path d="M61.5,19.475612000000012L71.35,19.475612000000012L81.2,19.475612000000012L91.05,19.475612000000012L100.9,19.475612000000012L110.75,19.475612000000012L120.6,19.475612000000012L130.45,19.475612000000012L140.3,19.475612000000012L150.15,19.475612000000012L160,19.475612000000012L169.85000000000002,19.475612000000012L179.7,23.963408799999996L189.55,28.451223999999996L199.39999999999998,28.451223999999996L209.25,28.451223999999996L219.10000000000002,37.42681759999999L228.95,37.42681759999999L238.8,37.42681759999999L248.64999999999998,41.91463280000002L250.62,41.91463280000002L252.59,41.91463280000002L254.56,46.402429600000005L256.53,73.3292656L258.5,194.5" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g><g><circle cx="160" cy="19.475612000000012" r="6.5" stroke="#3366cc" stroke-width="1" fill="#fafafa"></circle><circle cx="160" cy="19.475612000000012" r="4" stroke="none" stroke-width="0" fill="#3366cc"></circle></g></g><g><g><text text-anchor="middle" x="61.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="middle" x="160" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="middle" x="258.5" y="211.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="51.666666666666664" y="198.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.00</text></g><g><text text-anchor="end" x="51.666666666666664" y="152.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.25</text></g><g><text text-anchor="end" x="51.666666666666664" y="106.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.50</text></g><g><text text-anchor="end" x="51.666666666666664" y="60.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0.75</text></g><g><text text-anchor="end" x="51.666666666666664" y="14.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1.00</text></g></g></g><g><g><text text-anchor="middle" x="160" y="260.35" font-family="Arial" font-size="11" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Score threshold</text><rect x="61" y="251" width="198" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="18.683333333333334" y="102.5" font-family="Arial" font-size="11" font-style="italic" transform="rotate(-90 18.683333333333334 102.5)" stroke="none" stroke-width="0" fill="#222222">Recall@1</text><path d="M9.333333333333327,195L9.33333333333334,10L20.33333333333334,10.000000000000002L20.33333333333333,195Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>0</td><td>0.951</td></tr><tr><td>0.05</td><td>0.951</td></tr><tr><td>0.1</td><td>0.951</td></tr><tr><td>0.15</td><td>0.951</td></tr><tr><td>0.2</td><td>0.951</td></tr><tr><td>0.25</td><td>0.951</td></tr><tr><td>0.3</td><td>0.951</td></tr><tr><td>0.35</td><td>0.951</td></tr><tr><td>0.4</td><td>0.951</td></tr><tr><td>0.45</td><td>0.951</td></tr><tr><td>0.5</td><td>0.951</td></tr><tr><td>0.55</td><td>0.951</td></tr><tr><td>0.6</td><td>0.927</td></tr><tr><td>0.65</td><td>0.902</td></tr><tr><td>0.7</td><td>0.902</td></tr><tr><td>0.75</td><td>0.902</td></tr><tr><td>0.8</td><td>0.854</td></tr><tr><td>0.85</td><td>0.854</td></tr><tr><td>0.9</td><td>0.854</td></tr><tr><td>0.95</td><td>0.829</td></tr><tr><td>0.96</td><td>0.829</td></tr><tr><td>0.97</td><td>0.829</td></tr><tr><td>0.98</td><td>0.805</td></tr><tr><td>0.99</td><td>0.659</td></tr><tr><td>1</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 330px; white-space: nowrap; font-family: Arial; font-size: 11px;">...</div><div></div></div></div>
+      <i class="material-icons automl-inline-tooltip " id="recall_at_1_tooltip" tabindex="0">help_outline</i>
+          <div class="mdl-tooltip  mdl-tooltip--left" data-mdl-for="recall_at_1_tooltip" data-upgraded=",MaterialTooltip">
+    The recall@1 curve shows how your model performs on the top-scored label. A lower score threshold produces fewer false negatives, which increases recall.
+  </div>
+
+  </div>
+
+                    <h2>Confusion matrix</h2>
+  <div class="automl-confusion-matrix" id="automl_evaluate_all_labels_confusion_matrix_table">
+    <div class="automl-confusion-matrix-caption">
+      This table shows how often the model classified each label correctly (in blue), and which
+      labels were most often confused for that label (in orange).
+    </div>
+    <table class="automl-confusion-matrix-table">
+      <tbody><tr class="automl-confusion-matrix-table-header">
+        <td class="automl-confusion-matrix-table-header-cell automl-confusion-matrix-table-header-cell-true">True label</td>
+        <td class="automl-confusion-matrix-table-header-cell automl-confusion-matrix-table-header-cell-predicted"><span>Predicted label</span></td>
+      <td class="automl-confusion-matrix-table-header-cell automl-confusion-matrix-table-header-cell-label"><span>pneumonia _ 300</span></td><td class="automl-confusion-matrix-table-header-cell automl-confusion-matrix-table-header-cell-label"><span>normal _ 100</span></td></tr>
+    </tbody><tr><td class="automl-confusion-matrix-table-cell automl-confusion-matrix-table-cell-label" colspan="2">pneumonia _ 300</td><td class="automl-confusion-matrix-table-cell automl-confusion-matrix-table-cell-value" style="color: rgba(0, 0, 0, 0.8); background-color: rgba(65, 132, 243, 0.757);">94.1%</td><td class="automl-confusion-matrix-table-cell automl-confusion-matrix-table-cell-value" style="color: rgba(0, 0, 0, 0.8); background-color: rgba(255, 143, 0, 0.17);">5.9%</td></tr><tr><td class="automl-confusion-matrix-table-cell automl-confusion-matrix-table-cell-label" colspan="2">normal _ 100</td><td class="automl-confusion-matrix-table-cell automl-confusion-matrix-table-cell-value">-</td><td class="automl-confusion-matrix-table-cell automl-confusion-matrix-table-cell-value" style="color: rgba(0, 0, 0, 0.8); background-color: rgba(65, 132, 243, 0.8);">100.0%</td></tr></table>
+  </div>
+
+              </div>
+    </div>
+  </div>
+
+</div>
+        </div>
+
+      </main>
+    </div></div>
+
+        <div class="automl-application-data-section" data-user-email="plus2joy@gmail.com" data-server-project-name="custom-vision" data-gae-version-name="image-packaged-solutions-20190826-2355-rc2" data-gae-module-id="beta">
+    </div>
+
+        <dialog class="automl-page-locker-dialog">
+      <div class="automl-page-locker">
+        <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate is-upgraded" data-upgraded=",MaterialProgress"><div class="progressbar bar bar1" style="width: 0%;"></div><div class="bufferbar bar bar2" style="width: 100%;"></div><div class="auxbar bar bar3" style="width: 0%;"></div></div>
+      </div>
+    </dialog>
+
+  
+
+<div class="goog-menu goog-menu-vertical" role="menu" aria-haspopup="true" tabindex="-1" style="user-select: none; display: none;"><div class="goog-menuitem automl-menu-item automl-upload-local-files" role="menuitem" id=":0" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">Upload from your computer</div></div><div class="goog-menuitem automl-menu-item automl-import-from-gcs" role="menuitem" id=":1" style="user-select: none;"><div class="goog-menuitem-content" style="user-select: none;">Select CSV file on Cloud Storage</div></div></div></body></html>
